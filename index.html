@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Welcome to Our Store</h1>
+            <nav>
+                <a href="login.html">Login</a>
+                <a href="register.html">Register</a>
+                <a href="cart.html" class="cart-link">
+                    <img src="D:\images\cart-icon.png" alt="Cart" class="cart-icon">
+                    Cart
+                </a>
+                <form method="POST" style="display: inline;">
+                    <button type="submit" name="logout" class="logout-button">Logout</button>
+                </form>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <main>
+            <h2>Products</h2>
+            <div class="product-list">
+                <!-- Static Product Example 1 -->
+                <div class="product">
+                    <h3>Product Name 1</h3>
+                    <p>Price: $19.99</p>
+                    <p>Description of the first product.</p>
+                    <img src="images/product1.jpg" alt="Product 1" class="product-image">
+                    <form method="POST" action="cart.html">
+                        <input type="hidden" name="product_id" value="1">
+                        <button type="submit" name="add_to_cart" class="add-to-cart-button">Add to Cart</button>
+                    </form>
+                </div>
+
+                <!-- Static Product Example 2 -->
+                <div class="product">
+                    <h3>Product Name 2</h3>
+                    <p>Price: $29.99</p>
+                    <p>Description of the second product.</p>
+                    <img src="images/product2.jpg" alt="Product 2" class="product-image">
+                    <form method="POST" action="cart.html">
+                        <input type="hidden" name="product_id" value="2">
+                        <button type="submit" name="add_to_cart" class="add-to-cart-button">Add to Cart</button>
+                    </form>
+                </div>
+
+                <!-- Static Product Example 3 -->
+                <div class="product">
+                    <h3>Product Name 3</h3>
+                    <p>Price: $49.99</p>
+                    <p>Description of the third product.</p>
+                    <img src="images/product3.jpg" alt="Product 3" class="product-image">
+                    <form method="POST" action="cart.html">
+                        <input type="hidden" name="product_id" value="3">
+                        <button type="submit" name="add_to_cart" class="add-to-cart-button">Add to Cart</button>
+                    </form>
+                </div>
+
+                <!-- Add more products here as needed -->
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Online Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
